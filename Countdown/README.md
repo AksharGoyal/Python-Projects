@@ -6,3 +6,5 @@ The program acts like a timer for you. it will ask for hours, minutes and second
 
 In the above image, we can see we provide various inputs for our timer and our timer automatically adjusts the time and starts ticking.
 Have fun playing with this!
+
+Note: If you ever want to stop the timer or any program, just press Ctrl + C (or Cmd + C).
