@@ -20,7 +20,7 @@ User inputs a symbol or an already guessed word. The output will let the user kn
 
 After the user has run out of choices, the final output will be the hangman and game over message. If the user has filled the blanks with correct letters, then a vicotry message will be displayed with the correct word.
 
-![Hangman Game](.\Hangman_Trial.jpg)
+![Hangman Game](.\hangman_trial.jpg)
 
 In the image above, we see that as the user provides letters, the blanks are filled.
 
