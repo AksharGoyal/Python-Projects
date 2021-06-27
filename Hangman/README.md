@@ -20,8 +20,8 @@ User inputs a symbol or an already guessed word. The output will let the user kn
 
 After the user has run out of choices, the final output will be the hangman and game over message. If the user has filled the blanks with correct letters, then a vicotry message will be displayed with the correct word.
 
-![Hangman Game](..\hangman_trial.JPG)
+<img src="https://github.com/AksharGoyal/Python-Projects/blob/main/Hangman/hangman_trial.JPG" width="500" heigth="100"/>
 
-In the image above, we see that as the user provides letters, the blanks are filled.
+In the image above, we see that as the user provides letters, the blanks are filled. If it's an invalid letter, the hangman comes closer to their death. If it's an already used alphabet or an symbol, the game still continues.
 
 I really enjoyed making this game and I hope you will enjoy playing it :)
