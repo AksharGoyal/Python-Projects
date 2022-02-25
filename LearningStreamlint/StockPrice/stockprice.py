@@ -10,7 +10,7 @@ st.write("""
          
          """)
 
-tickerSymbol = 'GOOGL'
+tickerSymbol = 'AMZN'
 # get data on the specificed ticker
 tickerData = yf.Ticker(tickerSymbol)
 # print(tickerData)
