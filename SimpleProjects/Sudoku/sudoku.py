@@ -1,12 +1,21 @@
+import pprint
+import time
+
 def find_next_empty(puzzle):
+    '''
+    The function helps find an empty cell to fill a number
+    '''
     for r in range(9):
         for c in range(9):
-            if puzzle[r][c] == -1:
+            if puzzle[r][c] == -1: # we found an empty cell
                 return r,c 
-    return None, None
+    return None, None # no empty cell
 
 def is_Valid(puzzle, guess, row, col):
-    
+    '''
+    The function tells us if our guess is valid or not. If a cell in a row or column
+    already contains our guess then we don't use it and return False else we return True
+    '''
     row_vals = puzzle[row]
     if guess in row_vals:
         return False
@@ -17,16 +26,21 @@ def is_Valid(puzzle, guess, row, col):
     if guess in col_vals:
         return False 
     
-    row_start = (row // 3) * 3
-    col_start = (col // 3) * 3
+    row_start = (row // 3) * 3 # get the box's starting row number
+    col_start = (col // 3) * 3 # get the box's starting column number
     
     for r in range(row_start, row_start + 3):
         for c in range(col_start, col_start + 3):
-            if puzzle[r][c] == guess:
+            if puzzle[r][c] == guess: # check if the neighbours have the same guess
                 return False
     return True
 
 def sudoku_solver(puzzle):
+    '''
+    The functions is the game solver! Using the above 2 functions, it solves the game with various guesses!
+    If the game is not solvable, it will return False else True.
+    '''
+
     # print(f'Puzzle {puzzle}')
     row, col = find_next_empty(puzzle)
     # print(f'row: {row}, col: {col}')
@@ -55,6 +69,8 @@ if __name__ == '__main__':
         [-1, 4, 5,      9, 7, -1,       2, -1, 3],
         [-1, -1, -1,    -1, 3, -1,      -1, -1, -1]
     ]
+
+    print(sudoku_solver(example_board2))
+    time.sleep(0.8)
+    pprint.pprint(example_board1)
     
-    print(sudoku_solver(example_board1))
-    print(example_board1)
