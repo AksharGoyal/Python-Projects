@@ -1,5 +1,7 @@
 # Hangman  
 
+The program is originally developed by [Kylie Ying](https://www.youtube.com/watch?v=8ext9G7xspg). Working on this program strengthen my concepts about random module and sets.
+
 Your favourite game Hangman is back! The program uses 2 files: hangman.py and words.py.  
 words.py contains English words, with no punctuations, from which we pick a word and then start the game.  
 The goal is to find the right alphabets that make the word before our man gets executed.  
