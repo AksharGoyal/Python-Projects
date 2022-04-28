@@ -2,6 +2,7 @@ import turtle
 
 colours = ['red','purple','blue','green','orange','yellow']
 t = turtle.Pen()
+turtle.Screen().title("RED HEART")
 turtle.bgcolor('black')
 t.pencolor('red')
 t.width(2)
@@ -28,6 +29,4 @@ for x in range(45):
     t.left(5)
     t.forward(5)
 
-
-
-    
+turtle.Screen().exitonclick()
